@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "dist/api/server.js",
+        "src": "src/api/server.ts",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "dist/api/server.js"
+        "dest": "src/api/server.ts"
       }
     ],
     "buildCommand": "pnpm build",

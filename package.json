@@ -8,8 +8,9 @@
     },
     "scripts": {
         "start": "pnpm run build && node dist/api/server.js",
-        "build": "tsc",
-        "dev": "ts-node-dev src/app.ts"
+        "predev": "pnpm build",
+        "dev": "vercel dev",
+        "build": "tsc"
     },
     "devDependencies": {
         "@types/express": "^5.0.0",
