@@ -5,5 +5,15 @@
     "dependencies": {
         "express": "^4.21.2",
         "socket.io": "^4.8.1"
+    },
+    "scripts": {
+        "start": "pnpm run build && node dist/api/server.js",
+        "build": "tsc",
+        "dev": "ts-node-dev src/app.ts"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.10.3",
+        "typescript": "^5.7.2"
     }
 }
