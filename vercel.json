@@ -13,6 +13,6 @@
       }
     ],
     "buildCommand": "pnpm build",
-    "outputDirectory": "dist"
+    "outputDirectory": "dist/api"
   }
   
